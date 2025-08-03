@@ -5,7 +5,6 @@ import slackIcon from "@/assets/images/slack-logo.svg";
 import relumeIcon from "@/assets/images/relume-logo.svg";
 import framerIcon from "@/assets/images/framer-logo.svg";
 import githubIcon from "@/assets/images/github-logo.svg";
-import Image from "next/image";
 import IntegrationColumn from "@/components/IntegrationColumn";
 
 const integrations = [
@@ -27,16 +26,22 @@ export default function Integrations() {
                     <div>
                         <Tag>Integrations</Tag>
                         <h2 className="text-6xl font-medium mt-6">
-                            Plays well with <span className="text-lime-400">others</span>
+                            Plays well with <span className="text-lime-400">other</span> tools
                         </h2>
                         <p className="text-white/50 mt-4 text-lg">
                             Layers seamlessly integrates with your favorite tools, enhancing your workflow and productivity.
                         </p>
                     </div>
                     <div>
-                        <div className="h-[400px] lg:h-[800px] overflow-hidden grid md:grid-cols-2 gap-4 [mask-image:linear-gradient(to bottom, transparent, black_10%, black_90%, transparent)] mt-8 lg:mt-0">
+                        <div 
+                            className="h-[400px] lg:h-[800px] overflow-hidden grid md:grid-cols-2 gap-4 mt-8 lg:mt-0"
+                            style={{
+                                maskImage: 'linear-gradient(to bottom, transparent, black 10%, black 90%, transparent)',
+                                WebkitMaskImage: 'linear-gradient(to bottom, transparent, black 10%, black 90%, transparent)'
+                            }}
+                        >
                             <IntegrationColumn integrations={integrations} />
-                            <IntegrationColumn integrations={integrations.slice().reverse()} className="hidden md:flex"/>
+                            <IntegrationColumn integrations={integrations.slice().reverse()} className="hidden md:flex" reverse/>
                         </div>
                     </div>
                 </div>
