@@ -37,7 +37,7 @@ export default function Hero() {
             [rightPointerScope.current, { y: 0, x: 225 }, { duration: 0.5 }],
             [rightPointerScope.current, { x: 0, y: [0, 20, 0] }, { duration: 0.5, ease: "easeInOut" }],
         ]);
-    }, [leftDesignAnimate, leftPointerAnimate, rightDesignAnimate, rightPointerAnimate]);
+    }, [leftDesignAnimate, leftPointerAnimate, rightDesignAnimate, rightPointerAnimate, leftDesignScope, leftPointerScope, rightDesignScope, rightPointerScope]);
 
     return (
     <section className="py-24 overflow-x-clip" style={{

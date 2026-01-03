@@ -1,7 +1,7 @@
 'use client';
 
 import { AnimationPlaybackControls, motion, useAnimate } from "framer-motion";
-import { use, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function CallToAction() {
     const [isHovered, setIsHovered] = useState(false);
@@ -14,7 +14,7 @@ export default function CallToAction() {
         ]);
 
         animation.current.speed = 0.5
-    }, []);
+    }, [animate, scope]);
 
     useEffect(() => {
         if (animation.current) {

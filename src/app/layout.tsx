@@ -37,19 +37,39 @@ export const metadata: Metadata = {
         address: false,
         telephone: false,
     },
+    metadataBase: new URL("https://prop-trading-assistant.vercel.app"),
+    alternates: {
+        canonical: "/",
+    },
+    manifest: "/manifest.json",
+    applicationName: "Prop Trading Assistant",
+    appleWebApp: {
+        capable: true,
+        statusBarStyle: "default",
+        title: "Prop Trading Assistant",
+    },
     openGraph: {
-        title: "Prop Trading Assistant | Real-Time Compliance Monitoring",
-        description: "Monitor your prop firm challenge in real-time. Get instant alerts before violating rules. Pass your evaluation with confidence.",
+        title: "Prop Trading Assistant | Pass Your Prop Firm Challenge with Confidence",
+        description: "Monitor your prop firm challenge in real-time. Get instant alerts before violating rules. Track daily loss, max drawdown, and trading time restrictions.",
         url: "https://prop-trading-assistant.vercel.app",
         siteName: "Prop Trading Assistant",
         locale: "en_US",
         type: "website",
+        images: [
+            {
+                url: "/og-image.png",
+                width: 1200,
+                height: 630,
+                alt: "Prop Trading Assistant - Real-Time Compliance Monitoring",
+            },
+        ],
     },
     twitter: {
         card: "summary_large_image",
         title: "Prop Trading Assistant | Real-Time Compliance Monitoring",
-        description: "Real-time monitoring for prop traders. Get alerts before breaking challenge rules.",
+        description: "Real-time monitoring for prop traders. Get alerts before breaking challenge rules. Pass your FTMO or other prop firm challenges with confidence.",
         creator: "@proptradingapp",
+        images: ["/og-image.png"],
     },
     robots: {
         index: true,
@@ -78,12 +98,13 @@ export default function RootLayout({
         name: 'Prop Trading Assistant',
         applicationCategory: 'FinanceApplication',
         operatingSystem: 'Web Browser',
+        url: 'https://prop-trading-assistant.vercel.app',
         offers: {
             '@type': 'Offer',
             price: '0',
             priceCurrency: 'USD',
         },
-        description: 'Real-time compliance monitoring tool for proprietary traders. Get instant alerts for rule violations and pass your prop firm challenge.',
+        description: 'Real-time compliance monitoring tool for proprietary traders. Get instant alerts for rule violations and pass your prop firm challenge with confidence.',
         aggregateRating: {
             '@type': 'AggregateRating',
             ratingValue: '4.8',
@@ -95,8 +116,12 @@ export default function RootLayout({
             'Risk limit tracking',
             'Time-based restriction alerts',
             'Multi-prop firm support',
-            'Dashboard analytics'
+            'Dashboard analytics',
+            'Daily loss tracking',
+            'Maximum drawdown protection',
+            'Trading days counter'
         ],
+        screenshot: 'https://prop-trading-assistant.vercel.app/og-image.png',
     };
 
     return (
