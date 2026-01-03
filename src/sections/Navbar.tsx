@@ -11,7 +11,7 @@ const navLinks = [
     { label: "Home", href: "#" },
     { label: "Features", href: "#features" },
     { label: "Integrations", href: "#integrations" },
-    { label: "FAQs", href: "#faqs" },
+    { label: "FAQ", href: "#faqs" },
 ];
 
 export default function Navbar() {
@@ -36,7 +36,19 @@ export default function Navbar() {
                         {navLinks.map((link) => (
                             <a
                                 key={link.href}
-                                href={link.href}  
+                                href={link.href}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    if (link.href === '#') {
+                                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                                    } else {
+                                        const target = document.querySelector(link.href);
+                                        if (target) {
+                                            target.scrollIntoView({ behavior: 'smooth' });
+                                        }
+                                    }
+                                }}
+                                className="cursor-pointer hover:text-white transition-colors"
                             >
                                 {link.label}
                             </a>
@@ -61,8 +73,20 @@ export default function Navbar() {
                         <line x1="3" y1="12" x2="21" y2="12" className={twMerge('transition',isOpen && 'opacity-0')}></line>
                         <line x1="3" y1="18" x2="21" y2="18" className={twMerge('origin-left transition',isOpen && '-rotate-45 translate-y-1')}></line>
                     </svg>    
-                    <Button variant="secondary" className="hidden md:inline-flex items-center">Log in</Button>
-                    <Button variant="primary" className="hidden md:inline-flex items-center">Sign up</Button>
+                    <Button 
+                        variant="secondary" 
+                        className="hidden md:inline-flex items-center"
+                        onClick={() => window.location.href = 'https://prop-trading-assistant.vercel.app/sign-in'}
+                    >
+                        Log in
+                    </Button>
+                    <Button 
+                        variant="primary" 
+                        className="hidden md:inline-flex items-center"
+                        onClick={() => window.location.href = 'https://prop-trading-assistant.vercel.app/sign-up'}
+                    >
+                        Sign up
+                    </Button>
                 </div>
                     </div>
 
@@ -79,13 +103,37 @@ export default function Navbar() {
                                         <a 
                                             key={link.href}
                                             href={link.href}
-                                            className=""
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                setIsOpen(false);
+                                                if (link.href === '#') {
+                                                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                                                } else {
+                                                    const target = document.querySelector(link.href);
+                                                    if (target) {
+                                                        target.scrollIntoView({ behavior: 'smooth' });
+                                                    }
+                                                }
+                                            }}
+                                            className="cursor-pointer hover:text-white transition-colors"
                                         >
                                             {link.label}
                                         </a>
                                     ))}
-                                    <Button variant="secondary" className="mt-4">Log in</Button>
-                                    <Button variant="primary" className="mt-2">Sign up</Button>
+                                    <Button 
+                                        variant="secondary" 
+                                        className="mt-4"
+                                        onClick={() => window.location.href = 'https://prop-trading-assistant.vercel.app/sign-in'}
+                                    >
+                                        Log in
+                                    </Button>
+                                    <Button 
+                                        variant="primary" 
+                                        className="mt-2"
+                                        onClick={() => window.location.href = 'https://prop-trading-assistant.vercel.app/sign-up'}
+                                    >
+                                        Sign up
+                                    </Button>
                                 </div>
                         </motion.div>
                     )}

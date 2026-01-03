@@ -26,10 +26,10 @@ export default function Integrations() {
                     <div>
                         <Tag>Integrations</Tag>
                         <h2 className="text-6xl font-medium mt-6">
-                            Plays well with <span className="text-lime-400">other</span> tools
+                            Works with <span className="text-lime-400">all major</span> platforms
                         </h2>
                         <p className="text-white/50 mt-4 text-lg">
-                            Layers seamlessly integrates with your favorite tools, enhancing your workflow and productivity.
+                            Seamlessly integrates with MetaTrader, cTrader, and all major prop firm platforms to monitor your trading in real-time.
                         </p>
                     </div>
                     <div>
@@ -45,6 +45,7 @@ export default function Integrations() {
                         </div>
                     </div>
                 </div>
+                <br />
             </div>
         </section>
     )

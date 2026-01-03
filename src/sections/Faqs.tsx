@@ -7,24 +7,28 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const faqs = [
     {
-        question: "How is Layers different from other design tools?",
-        answer: "Unlike traditional design tools, Layers prioritizes speed and simplicity without sacrificing power. Our intelligent interface adapts to your workflow, reducing clicks and keeping you in your creative flow.",
+        question: "How does Prop Trading Assistant monitor my trades?",
+        answer: "Our platform connects to your trading account via API and monitors every trade in real-time. It tracks your position sizes, drawdown, daily loss, time restrictions, and all rule parameters specific to your prop firm challenge.",
     },
     {
-        question: "Is there a learning curve?",
-        answer: "Layers is designed to feel intuitive from day one. Most designers are productive within hours, not weeks. We also provide interactive tutorials and comprehensive documentation to help you get started.",
+        question: "Which prop firms are supported?",
+        answer: "We support all major prop firms including FTMO, MyForexFunds, The5ers, E8 Funding, FundedNext, and many more. Our system automatically adapts to each firm's specific rules and requirements.",
     },
     {
-        question: "How do you handle version control?",
-        answer: "Every change in Layers is automatically saved and versioned. You can review history, restore previous versions, and create named versions for important milestones.",
+        question: "Will I get alerts before breaking rules?",
+        answer: "Yes! Our intelligent alert system warns you before you breach any rules. You'll receive notifications when approaching risk limits, daily loss thresholds, or any time-based restrictions, giving you time to adjust your positions.",
     },
     {
-        question: "Can I work offline?",
-        answer: "Yes! Layers includes a robust offline mode. Changes sync automatically when you're back online, so you can keep working anywhere.",
+        question: "Is my trading data secure?",
+        answer: "Absolutely. We use bank-level encryption for all data transmission and storage. Your trading credentials are never stored, and we only use read-only API access. We're fully compliant with financial data protection standards.",
     },
     {
-        question: "How does Layers handle collaboration?",
-        answer: "Layers is built for collaboration. You can invite team members to your projects, share feedback, and work together in real-time.",
+        question: "Can I track multiple prop firm accounts?",
+        answer: "Yes! You can monitor multiple prop firm accounts simultaneously. Our dashboard gives you a clear overview of all your challenges, their current status, and compliance levels in one place.",
+    },
+    {
+        question: "How quickly are violations detected?",
+        answer: "Our system monitors your trades in real-time with latency under 1 second. You'll be notified immediately when any metric approaches a violation threshold, ensuring you have maximum time to respond.",
     },
 ];
 

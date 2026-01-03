@@ -7,6 +7,7 @@ import Faqs from "@/sections/Faqs";
 import CallToAction from "@/sections/CallToAction";
 import Footer from "@/sections/Footer";
 import Features from "@/sections/Features";
+import CardSwapSection from "@/sections/CardSwapSection";
 
 export default function Home() {
     return (
@@ -15,9 +16,16 @@ export default function Home() {
             <Hero />
             <LogoTicker />
             <Introduction />
-            <Features />
-            <Integrations />
-            <Faqs />
+            <section id="features">
+                <Features />
+            </section>
+            <CardSwapSection />
+            <section id="integrations">
+                <Integrations />
+            </section>
+            <section id="faqs">
+                <Faqs />
+            </section>
             <CallToAction />
             <Footer />
         </div>
