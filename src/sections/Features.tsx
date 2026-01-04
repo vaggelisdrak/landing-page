@@ -2,33 +2,33 @@
 
 const features = [
     {
-        title: "Asset Library",
-        description: "Organize your design assets with our comprehensive library system",
+        title: "Daily Loss Tracking",
+        description: "Monitor your daily drawdown in real-time and get instant alerts before reaching your limit",
         size: "large"
     },
     {
-        title: "Code Preview",
-        description: "See your designs come to life with real-time code generation",
+        title: "Max Drawdown Protection",
+        description: "Never exceed your maximum loss limit with automatic alerts and visual warnings",
         size: "medium"
     },
     {
-        title: "Flow Mode",
-        description: "Create seamless user flows and interactions",
+        title: "Trading Days Counter",
+        description: "Track your progress toward passing with an accurate trading days counter",
         size: "medium"
     },
     {
-        title: "Smart Sync",
-        description: "Keep your team in sync with automatic updates",
+        title: "Multi-Firm Support",
+        description: "Works with FTMO, The5ers, MyForexFunds, and more prop firms",
         size: "small"
     },
     {
-        title: "Auto Layout",
-        description: "Responsive layouts that adapt automatically",
+        title: "Time-Based Rules",
+        description: "Stay compliant with trading time restrictions and weekend trading rules",
         size: "large"
     },
     {
-        title: "Fast Search",
-        description: "Find anything in your project instantly",
+        title: "Real-Time Alerts",
+        description: "Get instant notifications before violating any challenge rule",
         size: "small"
     },
 ];
@@ -48,10 +48,10 @@ export default function Features() {
                         <Tag>Features</Tag>
                     </div>
                     <h2 className="text-6xl font-medium mt-6">
-                        Where <span className="text-lime-400">power</span> meets simplicity
+                        Where <span className="text-lime-400">safety</span> meets trading
                     </h2>
                     <p className="text-white/50 mt-4 text-lg max-w-2xl mx-auto">
-                        Everything you need to create amazing designs and streamline your workflow
+                        Everything you need to pass your prop firm challenge with confidence
                     </p>
                 </div>
                 
@@ -79,8 +79,8 @@ export default function Features() {
                             <div className="h-full flex flex-col justify-between">
                                 <div>
                                     <div className="flex items-center gap-3 mb-3">
-                                        <div className="w-9 h-9 bg-lime-400 rounded-lg flex items-center justify-center transition-transform duration-300">
-                                            <div className="w-6 h-6 bg-neutral-950 rounded"></div>
+                                        <div className="w-9 h-9 bg-lime-400 rounded-lg flex items-center justify-center transition-transform duration-300 flex-shrink-0">
+                                            <div className="w-6 h-6 bg-neutral-950 rounded flex-shrink-0"></div>
                                         </div>
                                         <h3 className={`font-semibold text-white group-hover:text-lime-400 transition-colors duration-300 ${
                                             feature.size === 'large' ? 'text-2xl lg:text-3xl' : 'text-xl lg:text-2xl'
@@ -98,45 +98,24 @@ export default function Features() {
                                 {feature.size === 'large' && (
                                     <div className="mt-6 relative">
                                         <div className="w-full h-32 bg-transparent rounded-lg border border-lime-400/30 relative overflow-hidden">
-                                            {/* Asset Library Animation */}
-                                            {feature.title === "Asset Library" && (
+                                            {/* Daily Loss Tracking Animation */}
+                                            {feature.title === "Daily Loss Tracking" && (
                                                 <>
-                                                    {/* Grid of assets */}
-                                                    <div className="absolute inset-4 grid grid-cols-4 gap-2">
-                                                        {Array.from({ length: 8 }).map((_, i) => (
-                                                            <motion.div
-                                                                key={i}
-                                                                className="bg-white/20 rounded aspect-square"
-                                                                initial={{ opacity: 0.5 }}
-                                                                animate={{ 
-                                                                    opacity: [0.5, 1, 0.5],
-                                                                    scale: [1, 1.05, 1]
-                                                                }}
-                                                                transition={{
-                                                                    duration: 2,
-                                                                    delay: i * 0.2,
-                                                                    repeat: Infinity,
-                                                                    repeatDelay: 3
-                                                                }}
-                                                            />
-                                                        ))}
-                                                    </div>
-                                                    
                                                     {/* Floating notifications */}
                                                     <FloatingNotifications />
                                                 </>
                                             )}
                                             
-                                            {/* Auto Layout Animation */}
-                                            {feature.title === "Auto Layout" && (
+                                            {/* Time-Based Rules Animation */}
+                                            {feature.title === "Time-Based Rules" && (
                                                 <StockChart />
                                             )}
                                         </div>
                                     </div>
                                 )}
                                 
-                                {/* Fast Search Animation for small grids */}
-                                {feature.title === "Fast Search" && (
+                                {/* Real-Time Alerts Animation for small grids */}
+                                {feature.title === "Real-Time Alerts" && (
                                     <SearchRules />
                                 )}
                             </div>

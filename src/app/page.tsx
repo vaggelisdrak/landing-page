@@ -8,6 +8,7 @@ import CallToAction from "@/sections/CallToAction";
 import Footer from "@/sections/Footer";
 import Features from "@/sections/Features";
 import CardSwapSection from "@/sections/CardSwapSection";
+import Testimonials from "@/sections/Testimonials";
 
 export default function Home() {
     return (
@@ -23,6 +24,7 @@ export default function Home() {
             <section id="integrations">
                 <Integrations />
             </section>
+            <Testimonials />
             <section id="faqs">
                 <Faqs />
             </section>
