@@ -37,7 +37,6 @@ import Tag from "@/components/Tag";
 import StockChart from "@/components/StockChart";
 import SearchRules from "@/components/SearchRules";
 import FloatingNotifications from "@/components/FloatingNotifications";
-import { motion } from "framer-motion";
 
 export default function Features() {
     return (
