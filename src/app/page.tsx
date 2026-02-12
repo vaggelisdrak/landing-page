@@ -1,6 +1,9 @@
 import Navbar from "@/sections/Navbar";
 import Hero from "@/sections/Hero";
+import Comparison from "@/sections/Comparison";
+import Metrics from "@/sections/Metrics";
 import LogoTicker from "@/sections/LogoTicker";
+import VideoDemo from "@/sections/VideoDemo";
 import Introduction from "@/sections/Introduction";
 import Integrations from "@/sections/Integrations";
 import Faqs from "@/sections/Faqs";
@@ -15,12 +18,19 @@ export default function Home() {
         <div>
             <Navbar />
             <Hero />
+            <Comparison />
+            <Metrics />
             <LogoTicker />
-            <Introduction />
+            <VideoDemo />
             <section id="features">
-                <Features />
+                {/* <Features /> */}
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <CardSwapSection />
             </section>
-            <CardSwapSection />
+            <Introduction />
             <section id="integrations">
                 <Integrations />
             </section>

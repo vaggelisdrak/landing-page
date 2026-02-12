@@ -25,13 +25,13 @@ const logos = [
 
 export default function LogoTicker() {
     return (
-    <section className="py-24 overflow-x-clip">
+    <section className="overflow-x-clip">
         <div className="container">
-            <h3 className="text-center text-white/50 text-xl">
+            {/* <h3 className="text-center text-white/50 text-xl">
                 Already chosen by these market leaders
-            </h3>
+            </h3> */}
             <div 
-                className="flex overflow-hidden mt-12"
+                className="flex overflow-hidden"
                 style={{
                     maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
                     WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)'

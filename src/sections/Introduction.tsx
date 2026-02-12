@@ -28,7 +28,7 @@ export default function Introduction() {
                         <Tag>Why Layers</Tag>
                     </div>
                     <div className="text-4xl md:text-6xl lg:text-7xl text-center font-medium mt-10">
-                        <span>Your trading success deserves protection.</span>{' '}
+                        <span>Your trading success deserves <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">protection</span>.</span>{' '}
                         <span className="">
                             {words.map((word, index) => (
                                 <span key={index} className={twMerge('transition duration-500 text-white/15',index < currentWord && 'text-white')}>

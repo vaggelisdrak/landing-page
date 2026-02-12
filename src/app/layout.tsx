@@ -144,7 +144,7 @@ export default function RootLayout({
                         style={{
                             background: "#000000",
                             backgroundImage: `
-                                radial-gradient(circle, rgba(255, 255, 255, 0.08) 1.5px, transparent 1.5px)
+                                radial-gradient(circle, rgba(255, 255, 255, 0.10) 1.5px, transparent 1.5px)
                             `,
                             backgroundSize: "30px 30px",
                             backgroundPosition: "0 0",

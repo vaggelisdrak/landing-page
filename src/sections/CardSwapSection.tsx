@@ -2,6 +2,11 @@
 
 import CardSwap, { Card } from '@/components/CardSwap';
 import Tag from "@/components/Tag";
+import Image from "next/image";
+import alertImage from "@/assets/images/alert_mini.png";            
+import setupMainImage from "@/assets/images/setup_mini.png";
+import tradingMainImage from "@/assets/images/trading_mini.png";
+import dashboardMainImage from "@/assets/images/dashboard_mini.png";
 
 export default function CardSwapSection() {
     return (
@@ -12,7 +17,7 @@ export default function CardSwapSection() {
                         <Tag>Interactive Experience</Tag>
                     </div>
                     <h2 className="text-6xl font-medium mt-6">
-                        Your <span className="text-lime-400">rules</span> in motion
+                        How <span className="text-lime-400">Layers</span> works
                     </h2>
                     <p className="text-white/50 mt-4 text-lg max-w-2xl mx-auto">
                         Real-time visual feedback that keeps you safe while you trade
@@ -24,90 +29,86 @@ export default function CardSwapSection() {
                             Live rule monitoring at your fingertips
                         </h3>
                         <p className="text-white/70 text-lg">
-                            Watch as our intelligent system tracks your trading metrics in real-time, providing instant visual alerts before you breach critical prop firm rules.
+                            Our intuitive interface provides real-time insights into your trading performance, ensuring you stay compliant with your prop firm's rules and make informed decisions to pass your challenge with confidence.  
                         </p>
                         <ul className="space-y-4">
                             <li className="flex items-start gap-3">
                                 <div className="w-9 h-9 bg-lime-400 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                                    <div className="w-6 h-6 bg-neutral-950 rounded"></div>
+                                    <span className="text-neutral-950 font-bold text-xl">1</span>
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold text-lg text-white">Instant Alerts</h4>
-                                    <p className="text-white/60">Get notified before you breach any rule, not after</p>
+                                    <h4 className="font-semibold text-lg text-white">Connect the plugin</h4>
+                                    <p className="text-white/60">Setup the tool that monitors your trades in less than 2 min</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
                                 <div className="w-9 h-9 bg-lime-400 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                                    <div className="w-6 h-6 bg-neutral-950 rounded"></div>
+                                    <span className="text-neutral-950 font-bold text-xl">2</span>
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold text-lg text-white">Visual Tracking</h4>
-                                    <p className="text-white/60">Beautiful, clear metrics that make sense at a glance</p>
+                                    <h4 className="font-semibold text-lg text-white">Choose Challenge</h4>
+                                    <p className="text-white/60">Select your Prop Firm challenge and configure the trading rules</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
                                 <div className="w-9 h-9 bg-lime-400 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                                    <div className="w-6 h-6 bg-neutral-950 rounded"></div>
+                                    <span className="text-neutral-950 font-bold text-xl">3</span>
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold text-lg text-white">Stay Protected</h4>
-                                    <p className="text-white/60">Focus on trading while we keep you safe</p>
+                                    <h4 className="font-semibold text-lg text-white">Start trading</h4>
+                                    <p className="text-white/60">Focus on your trading while we keep you safe with real-time alerts</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
                                 <div className="w-9 h-9 bg-lime-400 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                                    <div className="w-6 h-6 bg-neutral-950 rounded"></div>
+                                    <span className="text-neutral-950 font-bold text-xl">4</span>
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold text-lg text-white">Stay Protected</h4>
-                                    <p className="text-white/60">Focus on trading while we keep you safe</p>
+                                    <h4 className="font-semibold text-lg text-white">Track Progress</h4>
+                                    <p className="text-white/60">View your trading performance and improvements over time</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
                     <div className="order-2 lg:order-2" style={{ height: '700px', minHeight: '500px', position: 'relative' }}>
                     <CardSwap
-                        width="min(500px, 90vw)"
-                        height="min(400px, 60vw)"
+                        width="min(550px, 95vw)"
+                        height="min(400px, 70vw)"
                         cardDistance={60}
                         verticalDistance={70}
                         delay={5000}
                         pauseOnHover={false}
                     >
-                        <Card className="overflow-hidden">
-                            <div className="w-full h-full flex flex-col items-center justify-center p-8 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-xl">
-                                <div className="w-16 h-16 bg-lime-400 rounded-xl flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(163,230,53,0.6),0_0_60px_rgba(163,230,53,0.3)] hover:shadow-[0_0_40px_rgba(163,230,53,0.8),0_0_80px_rgba(163,230,53,0.4)] transition-shadow duration-300">
-                                    <div className="w-10 h-10 bg-neutral-950 rounded-lg"></div>
+                        <Card className="overflow-hidden border-2 border-pink-400 rounded-xl shadow-[0_0_10px_rgba(251,146,188,0.2)] hover:shadow-[0_0_20px_rgba(251,146,188,0.4)] transition-shadow duration-300">
+                            <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-xl relative">
+                                <div className="absolute top-4 left-4 w-8 h-8 bg-pink-400 rounded-lg flex items-center justify-center z-10">
+                                    <span className="text-neutral-950 font-bold text-xl">1</span>
                                 </div>
-                                <h3 className="text-3xl font-semibold text-white mb-4">Daily Loss Alert</h3>
-                                <p className="text-white/70 text-center text-lg">Monitor your daily drawdown in real-time</p>
+                                <Image src={setupMainImage} alt="Setup" className="w-full h-full object-cover rounded-xl" />
                             </div>
                         </Card>
-                        <Card className="overflow-hidden">
-                            <div className="w-full h-full flex flex-col items-center justify-center p-8 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-xl">
-                                <div className="w-16 h-16 bg-lime-400 rounded-xl flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(163,230,53,0.6),0_0_60px_rgba(163,230,53,0.3)] hover:shadow-[0_0_40px_rgba(163,230,53,0.8),0_0_80px_rgba(163,230,53,0.4)] transition-shadow duration-300">
-                                    <div className="w-10 h-10 bg-neutral-950 rounded-lg"></div>
+                        <Card className="overflow-hidden border-2 border-pink-400 rounded-xl shadow-[0_0_10px_rgba(251,146,188,0.2)] hover:shadow-[0_0_20px_rgba(251,146,188,0.4)] transition-shadow duration-300">
+                            <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-xl relative">
+                                <div className="absolute top-4 left-4 w-8 h-8 bg-pink-400 rounded-lg flex items-center justify-center z-10">
+                                    <span className="text-neutral-950 font-bold text-xl">2</span>
                                 </div>
-                                <h3 className="text-3xl font-semibold text-white mb-4">Max Loss Protection</h3>
-                                <p className="text-white/70 text-center text-lg">Never exceed your maximum loss limit</p>
+                                <Image src={tradingMainImage} alt="Trading" className="w-full h-full object-cover rounded-xl" />
                             </div>
                         </Card>
-                        <Card className="overflow-hidden">
-                            <div className="w-full h-full flex flex-col items-center justify-center p-8 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-xl">
-                                <div className="w-16 h-16 bg-lime-400 rounded-xl flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(163,230,53,0.6),0_0_60px_rgba(163,230,53,0.3)] hover:shadow-[0_0_40px_rgba(163,230,53,0.8),0_0_80px_rgba(163,230,53,0.4)] transition-shadow duration-300">
-                                    <div className="w-10 h-10 bg-neutral-950 rounded-lg"></div>
+                        <Card className="overflow-hidden border-2 border-pink-400 rounded-xl shadow-[0_0_10px_rgba(251,146,188,0.2)] hover:shadow-[0_0_20px_rgba(251,146,188,0.4)] transition-shadow duration-300">
+                            <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-xl relative">
+                                <div className="absolute top-4 left-4 w-8 h-8 bg-pink-400 rounded-lg flex items-center justify-center z-10">
+                                    <span className="text-neutral-950 font-bold text-xl">3</span>
                                 </div>
-                                <h3 className="text-3xl font-semibold text-white mb-4">Trading Days Tracker</h3>
-                                <p className="text-white/70 text-center text-lg">Track your progress toward passing</p>
+                                <Image src={alertImage} alt="Alert" className="w-full h-full object-cover rounded-xl" />
                             </div>
                         </Card>
-                        <Card className="overflow-hidden">
-                            <div className="w-full h-full flex flex-col items-center justify-center p-8 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-xl">
-                                <div className="w-16 h-16 bg-lime-400 rounded-xl flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(163,230,53,0.6),0_0_60px_rgba(163,230,53,0.3)] hover:shadow-[0_0_40px_rgba(163,230,53,0.8),0_0_80px_rgba(163,230,53,0.4)] transition-shadow duration-300">
-                                    <div className="w-10 h-10 bg-neutral-950 rounded-lg"></div>
+                        <Card className="overflow-hidden border-2 border-pink-400 rounded-xl shadow-[0_0_10px_rgba(251,146,188,0.2)] hover:shadow-[0_0_20px_rgba(251,146,188,0.4)] transition-shadow duration-300">
+                            <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-xl relative">
+                                <div className="absolute top-4 left-4 w-8 h-8 bg-pink-400 rounded-lg flex items-center justify-center z-10">
+                                    <span className="text-neutral-950 font-bold text-xl">4</span>
                                 </div>
-                                <h3 className="text-3xl font-semibold text-white mb-4">Trading Days Tracker</h3>
-                                <p className="text-white/70 text-center text-lg">Track your progress toward passing</p>
+                                <Image src={dashboardMainImage} alt="Dashboard" className="w-full h-full object-cover rounded-xl" />
                             </div>
                         </Card>
                     </CardSwap>
