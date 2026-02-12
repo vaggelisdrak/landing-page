@@ -26,7 +26,7 @@ export default function CardSwapSection() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6 order-1 lg:order-1">
                         <h3 className="text-4xl font-medium max-md:text-3xl">
-                            Live rule monitoring at your fingertips
+                            Live trade monitoring at your fingertips
                         </h3>
                         <p className="text-white/70 text-lg">
                             Our intuitive interface provides real-time insights into your trading performance, ensuring you stay compliant with your prop firm's rules and make informed decisions to pass your challenge with confidence.  
@@ -79,33 +79,33 @@ export default function CardSwapSection() {
                         delay={5000}
                         pauseOnHover={false}
                     >
-                        <Card className="overflow-hidden border-2 border-pink-400 rounded-xl shadow-[0_0_10px_rgba(251,146,188,0.2)] hover:shadow-[0_0_20px_rgba(251,146,188,0.4)] transition-shadow duration-300">
+                        <Card className="overflow-hidden border-2 border-transparent bg-gradient-to-r from-purple-400 to-pink-400 rounded-xl shadow-[0_0_10px_rgba(192,132,252,0.2)] hover:shadow-[0_0_20px_rgba(192,132,252,0.4)] transition-shadow duration-300">
                             <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-xl relative">
-                                <div className="absolute top-4 left-4 w-8 h-8 bg-pink-400 rounded-lg flex items-center justify-center z-10">
+                                <div className="absolute top-4 left-4 w-8 h-8 bg-gradient-to-r from-purple-400 to-pink-400 rounded-lg flex items-center justify-center z-10">
                                     <span className="text-neutral-950 font-bold text-xl">1</span>
                                 </div>
                                 <Image src={setupMainImage} alt="Setup" className="w-full h-full object-cover rounded-xl" />
                             </div>
                         </Card>
-                        <Card className="overflow-hidden border-2 border-pink-400 rounded-xl shadow-[0_0_10px_rgba(251,146,188,0.2)] hover:shadow-[0_0_20px_rgba(251,146,188,0.4)] transition-shadow duration-300">
+                        <Card className="overflow-hidden border-2 border-transparent bg-gradient-to-r from-purple-400 to-pink-400 rounded-xl shadow-[0_0_10px_rgba(192,132,252,0.2)] hover:shadow-[0_0_20px_rgba(192,132,252,0.4)] transition-shadow duration-300">
                             <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-xl relative">
-                                <div className="absolute top-4 left-4 w-8 h-8 bg-pink-400 rounded-lg flex items-center justify-center z-10">
+                                <div className="absolute top-4 left-4 w-8 h-8 bg-gradient-to-r from-purple-400 to-pink-400 rounded-lg flex items-center justify-center z-10">
                                     <span className="text-neutral-950 font-bold text-xl">2</span>
                                 </div>
                                 <Image src={tradingMainImage} alt="Trading" className="w-full h-full object-cover rounded-xl" />
                             </div>
                         </Card>
-                        <Card className="overflow-hidden border-2 border-pink-400 rounded-xl shadow-[0_0_10px_rgba(251,146,188,0.2)] hover:shadow-[0_0_20px_rgba(251,146,188,0.4)] transition-shadow duration-300">
+                        <Card className="overflow-hidden border-2 border-transparent bg-gradient-to-r from-purple-400 to-pink-400 rounded-xl shadow-[0_0_10px_rgba(192,132,252,0.2)] hover:shadow-[0_0_20px_rgba(192,132,252,0.4)] transition-shadow duration-300">
                             <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-xl relative">
-                                <div className="absolute top-4 left-4 w-8 h-8 bg-pink-400 rounded-lg flex items-center justify-center z-10">
+                                <div className="absolute top-4 left-4 w-8 h-8 bg-gradient-to-r from-purple-400 to-pink-400 rounded-lg flex items-center justify-center z-10">
                                     <span className="text-neutral-950 font-bold text-xl">3</span>
                                 </div>
                                 <Image src={alertImage} alt="Alert" className="w-full h-full object-cover rounded-xl" />
                             </div>
                         </Card>
-                        <Card className="overflow-hidden border-2 border-pink-400 rounded-xl shadow-[0_0_10px_rgba(251,146,188,0.2)] hover:shadow-[0_0_20px_rgba(251,146,188,0.4)] transition-shadow duration-300">
+                        <Card className="overflow-hidden border-2 border-transparent bg-gradient-to-r from-purple-400 to-pink-400 rounded-xl shadow-[0_0_10px_rgba(192,132,252,0.2)] hover:shadow-[0_0_20px_rgba(192,132,252,0.4)] transition-shadow duration-300">
                             <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-xl relative">
-                                <div className="absolute top-4 left-4 w-8 h-8 bg-pink-400 rounded-lg flex items-center justify-center z-10">
+                                <div className="absolute top-4 left-4 w-8 h-8 bg-gradient-to-r from-purple-400 to-pink-400 rounded-lg flex items-center justify-center z-10">
                                     <span className="text-neutral-950 font-bold text-xl">4</span>
                                 </div>
                                 <Image src={dashboardMainImage} alt="Dashboard" className="w-full h-full object-cover rounded-xl" />

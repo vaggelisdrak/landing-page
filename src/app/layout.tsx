@@ -137,16 +137,16 @@ export default function RootLayout({
             <body
                 className={`${inter.variable} font-sans antialiased text-white`}
             >
-                <div className="min-h-screen w-full bg-black relative">
+                <div className="min-h-screen w-full bg-neutral-950 relative">
                     {/* Dark White Dotted Grid Background */}
                     <div
                         className="absolute inset-0 z-0"
                         style={{
-                            background: "#000000",
+                            backgroundColor: "#0d0d0d",
                             backgroundImage: `
-                                radial-gradient(circle, rgba(255, 255, 255, 0.10) 1.5px, transparent 1.5px)
+                                radial-gradient(circle, rgba(255, 255, 255, 0.1) 1.5px, transparent 1.5px)
                             `,
-                            backgroundSize: "30px 30px",
+                            backgroundSize: "32px 32px",
                             backgroundPosition: "0 0",
                         }}
                     />

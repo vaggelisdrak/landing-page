@@ -21,7 +21,7 @@ export default function Home() {
             <Comparison />
             <Metrics />
             <LogoTicker />
-            <VideoDemo />
+            {/* <VideoDemo /> */}
             <section id="features">
                 {/* <Features /> */}
                 <br/>

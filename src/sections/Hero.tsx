@@ -4,6 +4,7 @@ import Button from "@/components/Button";
 import Image from "next/image";
 import designExample1Image from "@/assets/images/design-example-1.png";
 import designExample2Image from "@/assets/images/design-example-2.png";
+import dashboardMainImage from "@/assets/images/dashboard_main.png";
 import Pointer from "@/components/Pointer";
 import { motion, useAnimate } from "framer-motion";
 import { useEffect } from "react";
@@ -59,16 +60,16 @@ export default function Hero() {
                 <Pointer name="Bryan" color="red"/>
             </motion.div> */}
 
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
                 <div className="inline-flex py-1 px-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full text-neutral-950 font-semibold">
                     ✨ Trusted by 500+ Prop Traders
                 </div>
-            </div>
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-medium text-center mt-6">
-                Pass Your Prop Firm Challenge with Confidence
+            </div> */}
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-medium text-center mt-2">
+                Stop violating Prop Firm<br />Challenge <span className="bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text">Rules</span>
             </h1>
             <p className="text-center text-xl text-white/50 mt-8 max-w-2xl mx-auto">
-                Real-time monitoring that alerts you before breaking any prop firm trading rules. Stay compliant, avoid costly mistakes, and focus on your strategy.
+                Real-time monitoring that alerts you before breaking any prop firm trading rules. Stay compliant, and focus on your strategy.
             </p>
             <form 
                 className="flex border border-white/15 rounded-full p-2 mt-8 max-w-lg mx-auto focus-within:border-white/40 focus-within:shadow-lg transition-all duration-300"
@@ -86,6 +87,24 @@ export default function Hero() {
                     Sign up
                 </Button>
             </form>
+            <br/>
+            <br/>
+
+            {/* Dashboard Image */}
+            <div className="mt-20 flex justify-center">
+                <div 
+                    className="relative p-1 rounded-xl bg-gradient-to-r from-purple-400 to-pink-400 max-w-5xl"
+                    // style={{
+                    //     boxShadow: '0 0 20px rgba(192, 132, 252, 0.5), 0 0 40px rgba(244, 114, 182, 0.3), 0 0 60px rgba(192, 132, 252, 0.2)'
+                    // }}
+                >
+                    <Image 
+                        src={dashboardMainImage} 
+                        alt="Dashboard" 
+                        className="rounded-lg shadow-2xl w-full"
+                    />
+                </div>
+            </div>
         </div>
     </section>
     );
