@@ -29,7 +29,7 @@ export default function CardSwapSection() {
                             Live trade monitoring at your fingertips
                         </h3>
                         <p className="text-white/70 text-lg">
-                            Our intuitive interface provides real-time insights into your trading performance, ensuring you stay compliant with your prop firm's rules and make informed decisions to pass your challenge with confidence.  
+                            Our intuitive interface provides real-time insights into your trading performance, ensuring you stay compliant with your prop firm&apos;s rules and make informed decisions to pass your challenge with confidence.  
                         </p>
                         <ul className="space-y-4">
                             <li className="flex items-start gap-3">

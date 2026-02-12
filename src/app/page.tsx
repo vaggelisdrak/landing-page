@@ -3,13 +3,11 @@ import Hero from "@/sections/Hero";
 import Comparison from "@/sections/Comparison";
 import Metrics from "@/sections/Metrics";
 import LogoTicker from "@/sections/LogoTicker";
-import VideoDemo from "@/sections/VideoDemo";
 import Introduction from "@/sections/Introduction";
 import Integrations from "@/sections/Integrations";
 import Faqs from "@/sections/Faqs";
 import CallToAction from "@/sections/CallToAction";
 import Footer from "@/sections/Footer";
-import Features from "@/sections/Features";
 import CardSwapSection from "@/sections/CardSwapSection";
 import Testimonials from "@/sections/Testimonials";
 
