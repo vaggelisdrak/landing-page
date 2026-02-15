@@ -14,7 +14,7 @@ export default function CardSwapSection() {
             <div className="container">
                 <div className="text-center mb-16">
                     <div className="flex justify-center">
-                        <Tag>Interactive Experience</Tag>
+                        <Tag>Features</Tag>
                     </div>
                     <h2 className="text-6xl font-medium mt-6">
                         How <span className="text-lime-400">Layers</span> works
@@ -31,7 +31,7 @@ export default function CardSwapSection() {
                         <p className="text-white/70 text-lg">
                             Our intuitive interface provides real-time insights into your trading performance, ensuring you stay compliant with your prop firm&apos;s rules and make informed decisions to pass your challenge with confidence.  
                         </p>
-                        <ul className="space-y-4">
+                        <ul className="space-y-4 md:mr-10 pr-10">
                             <li className="flex items-start gap-3">
                                 <div className="w-9 h-9 bg-lime-400 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                                     <span className="text-neutral-950 font-bold text-xl">1</span>
