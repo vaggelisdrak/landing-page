@@ -25,7 +25,7 @@ export default function Navbar() {
                     <div>
                         <Image
                             src={logoImage}
-                        alt="Layers Logo"
+                        alt="TradeSentry Logo"
                         width={100}
                         height={100}
                         className="h-9 md:h-auto w-auto ml-2"

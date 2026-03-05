@@ -17,7 +17,7 @@ export default function CardSwapSection() {
                         <Tag>Features</Tag>
                     </div>
                     <h2 className="text-6xl font-medium mt-6">
-                        How <span className="text-lime-400">Layers</span> works
+                        How <span className="text-lime-400">TradeSentry</span> works
                     </h2>
                     <p className="text-white/50 mt-4 text-lg max-w-2xl mx-auto">
                         Real-time visual feedback that keeps you safe while you trade

@@ -26,7 +26,7 @@ export default function Comparison() {
                             <Tag>Benefits</Tag>
                         </div>
                         <h2 className="text-6xl font-medium mt-6">
-                            Why choose Layers
+                            Why choose TradeSentry
                         </h2>
                         <p className="text-white/50 mt-4 text-lg max-w-2xl mx-auto">
                             Real-time Big Brother that keeps you safe while you trade
