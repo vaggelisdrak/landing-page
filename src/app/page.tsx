@@ -10,6 +10,7 @@ import CallToAction from "@/sections/CallToAction";
 import Footer from "@/sections/Footer";
 import CardSwapSection from "@/sections/CardSwapSection";
 import Testimonials from "@/sections/Testimonials";
+import VideoDemo from "@/sections/VideoDemo";
 
 export default function Home() {
     return (
@@ -19,7 +20,7 @@ export default function Home() {
             <Comparison />
             <Metrics />
             <LogoTicker />
-            {/* <VideoDemo /> */}
+            <VideoDemo />
             <section id="features">
                 {/* <Features /> */}
                 <br/>

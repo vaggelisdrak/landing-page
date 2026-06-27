@@ -37,20 +37,15 @@ export default function VideoDemo() {
 
     return (
         <section ref={sectionRef} className="py-24 mt-12">
+            <br/>
             <div className="container">
                 <div className="text-center mb-16">
                     <div className="flex justify-center">
-                        <Tag>Demo</Tag>
+                        <Tag>Demo (20s)</Tag>
                     </div>
-                    <h2 className="text-6xl font-medium mt-6">
-                        How it works?
-                    </h2>
-                    <p className="text-white/50 mt-4 text-lg max-w-2xl mx-auto">
-                        Real-time feedback that keeps you safe while you trade
-                    </p>
                 </div>
                 <div className="max-w-6xl mx-auto">
-                    <div className="p-1 bg-gradient-to-r from-purple-400 to-pink-400 rounded-2xl">
+                    <div className="p-1 bg-gradient-to-r from-purple-400 to-pink-400 rounded-2xl shadow-[0_10px_30px_rgba(236,72,153,0.2)]">
                         <iframe
                             ref={iframeRef}
                             src="https://player.mux.com/btSpmWLcdQEWzVUinFxBoHl01JsrPV02cmmM21o2HBuIU?autoplay=1&muted=1"

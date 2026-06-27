@@ -1,6 +1,7 @@
 'use client';
 
 import Button from "@/components/Button";
+import FloatingNotifications from "@/components/FloatingNotifications";
 import Image from "next/image";
 import dashboardMainImage from "@/assets/images/dashboard_main.png";
 import cursorYouImage from "@/assets/images/cursor-you.svg";
@@ -40,6 +41,7 @@ export default function Hero() {
         cursor: `url(${cursorYouImage.src}), auto`,
     }}>
         <div className="container relative">
+            <FloatingNotifications className="fixed right-3 top-3 z-[90] w-[min(92vw,360px)] sm:right-5 sm:top-5" />
 
             {/* <motion.div ref={leftDesignScope} initial={{ opacity: 0, y: 100, x: -100 }} drag className="absolute -left-40 top-20 hidden lg:block">
                 <Image src={designExample1Image} alt="Design Example 1" draggable='false' />
