@@ -41,7 +41,7 @@ export default function Faqs() {
                     <Tag>FAQs</Tag>
                 </div>
                 <h2 className="text-6xl font-medium mt-6 text-center max-w-xl mx-auto">
-                    Questions? We&apos;ve got <span className="text-lime-400">answers</span>
+                    Questions? We&apos;ve got <span className="text-pink-400">answers</span>
                 </h2>
                 <div className="mt-12 flex flex-col gap-6">
                     {faqs.map((faq, index) => (
@@ -60,7 +60,7 @@ export default function Faqs() {
                                     strokeWidth="2" 
                                     strokeLinecap="round" 
                                     strokeLinejoin="round" 
-                                    className={twMerge("feather feather-plus text-lime-400 flex-shrink-0 transition duration-300", 
+                                    className={twMerge("feather feather-plus text-pink-400 flex-shrink-0 transition duration-300", 
                                         selectedIndex === index && 'rotate-45')}
                                 >
                                     <line x1="12" y1="5" x2="12" y2="19"></line>

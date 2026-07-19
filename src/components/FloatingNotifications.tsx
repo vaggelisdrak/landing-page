@@ -24,7 +24,7 @@ const notifications = [
         sender: "Wake-up Call",
         message: "Let me guess, you just broke the news rule...",
         time: "5s",
-        accent: "bg-lime-400",
+        accent: "bg-pink-400",
     },
     {
         id: 4,
@@ -45,7 +45,7 @@ const notifications = [
         sender: "Your Bank Account",
         message: "You just spent $500 to another account. Are you sure you want to continue trading?",
         time: "1m",
-        accent: "bg-lime-500",
+        accent: "bg-pink-500",
     },
     {
         id: 7,

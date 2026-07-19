@@ -77,7 +77,7 @@ export default async function Image() {
                         }}
                     >
                         Pass Your Prop Firm Challenge with{' '}
-                        <span style={{ color: '#a3e635' }}>Confidence</span>
+                        <span style={{ color: '#f472b6' }}>Confidence</span>
                     </h1>
 
                     {/* Description */}

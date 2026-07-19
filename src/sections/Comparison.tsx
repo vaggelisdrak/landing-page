@@ -59,8 +59,8 @@ export default function Comparison() {
                         </div>
 
                         {/* Our Product Card */}
-                        <div className="rounded-3xl p-8 md:p-12 relative border border-lime-400 bg-neutral-950">
-                            <h3 className="text-2xl md:text-3xl font-bold text-lime-400 mb-8">
+                        <div className="rounded-3xl p-8 md:p-12 relative border border-pink-400 bg-neutral-950">
+                            <h3 className="text-2xl md:text-3xl font-bold text-pink-400 mb-8">
                                 With the app 🤩
                             </h3>
                             <ul className="space-y-4">
@@ -69,7 +69,7 @@ export default function Comparison() {
                                     const description = rest.join(':');
                                     return (
                                         <li key={index} className="flex items-start gap-3">
-                                            <Check className="w-5 h-5 text-lime-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                                            <Check className="w-5 h-5 text-pink-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
                                             <span className="text-white text-base md:text-lg">
                                                 <span className="font-bold">{key}:</span>{description}
                                             </span>

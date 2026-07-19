@@ -7,10 +7,10 @@ export default function StockChart() {
         <div className="absolute inset-4 flex flex-col justify-between">
             {/* Forex pair and price */}
             <div className="flex justify-between items-start text-xs">
-                <span className="text-lime-400 font-medium">EUR/USD</span>
+                <span className="text-pink-400 font-medium">EUR/USD</span>
                 <motion.span 
                     className="text-white font-mono"
-                    animate={{ color: ["#ffffff", "#84cc16", "#ffffff"] }}
+                    animate={{ color: ["#ffffff", "#ec4899", "#ffffff"] }}
                     transition={{ duration: 2, repeat: Infinity }}
                 >
                     1.0847
@@ -38,11 +38,11 @@ export default function StockChart() {
                         >
                             {/* Candlestick body */}
                             <motion.div
-                                className={`w-2 ${isGreen ? 'bg-lime-400' : 'bg-red-400'} rounded-sm`}
+                                className={`w-2 ${isGreen ? 'bg-pink-400' : 'bg-red-400'} rounded-sm`}
                                 style={{ height: height * 0.6 }}
                                 animate={{
                                     backgroundColor: isGreen 
-                                        ? ["#84cc16", "#65a30d", "#84cc16"]
+                                        ? ["#ec4899", "#db2777", "#ec4899"]
                                         : ["#f87171", "#dc2626", "#f87171"]
                                 }}
                                 transition={{

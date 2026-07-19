@@ -22,7 +22,7 @@ export default function SearchRules() {
                     {["Type: Button", "Color: Primary", "Size: Large"].map((rule, i) => (
                         <motion.div
                             key={rule}
-                            className="bg-lime-400/20 text-lime-400 text-xs px-2 py-1 rounded border border-lime-400/30"
+                            className="bg-pink-400/20 text-pink-400 text-xs px-2 py-1 rounded border border-pink-400/30"
                             initial={{ opacity: 0, x: -10 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{

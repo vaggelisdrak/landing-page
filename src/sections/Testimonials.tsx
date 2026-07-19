@@ -80,7 +80,7 @@ const ReviewCard = ({
     >
       <div className="flex flex-row items-center gap-3">
         <Image 
-          className="rounded-full border-2 border-lime-400/50" 
+          className="rounded-full border-2 border-pink-400/50" 
           width={40} 
           height={40} 
           alt={name} 
@@ -107,7 +107,7 @@ export default function Testimonials() {
             <Tag>Testimonials</Tag>
           </div>
           <h2 className="text-6xl font-medium mt-6 max-md:text-4xl">
-            Trusted by <span className="text-lime-400">successful</span> traders
+            Trusted by <span className="text-pink-400">successful</span> traders
           </h2>
           <p className="text-white/50 mt-4 text-lg max-w-2xl mx-auto">
             Join hundreds of prop traders who passed their challenges with confidence
@@ -125,8 +125,8 @@ export default function Testimonials() {
               <ReviewCard key={review.username} {...review} />
             ))}
           </Marquee>
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-[#0d0d0d]"></div>
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-[#0d0d0d]"></div>
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-neutral-950 to-transparent"></div>
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-neutral-950 to-transparent"></div>
         </div>
       </div>
     </section>

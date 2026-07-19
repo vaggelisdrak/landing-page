@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
+import dynamic from "next/dynamic";
+
+const Beams = dynamic(() => import("@/components/Beams"), { ssr: false });
 
 const inter = Inter({
     variable: "--font-inter",
@@ -138,18 +141,20 @@ export default function RootLayout({
                 className={`${inter.variable} font-sans antialiased text-white`}
             >
                 <div className="min-h-screen w-full bg-neutral-950 relative">
-                    {/* Dark White Dotted Grid Background */}
-                    <div
-                        className="absolute inset-0 z-0"
-                        style={{
-                            backgroundColor: "#0d0d0d",
-                            backgroundImage: `
-                                radial-gradient(circle, rgba(255, 255, 255, 0.1) 1.5px, transparent 1.5px)
-                            `,
-                            backgroundSize: "32px 32px",
-                            backgroundPosition: "0 0",
-                        }}
-                    />
+                    {/* Beams Background instead of dotted grid */}
+                    <div className="fixed inset-0 z-0 pointer-events-none opacity-45">
+                        <Beams
+                            beamWidth={2.5}
+                            beamHeight={20}
+                            beamNumber={14}
+                            lightColor="#c084fc"
+                            speed={0.3}
+                            noiseIntensity={1.8}
+                            scale={0.15}
+                            rotation={15}
+                            transparent={true}
+                        />
+                    </div>
                     {/* Your Content/Components */}
                     <div className="relative z-10">
                         {children}

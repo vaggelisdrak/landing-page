@@ -38,7 +38,7 @@ export default function CallToAction() {
                     {Array.from({ length: 10 }).map((_, index) => (
                         <div key={index} className="flex items-center gap-16">
                             <span className="bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text text-7xl">&#10038;</span>
-                            <span className="group-hover:text-lime-400">Try free trial</span>
+                            <span className="group-hover:text-pink-400">Try free trial</span>
                         </div>
                     ))}
                 </motion.div>

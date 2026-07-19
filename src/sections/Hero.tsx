@@ -1,7 +1,6 @@
 'use client';
 
 import Button from "@/components/Button";
-import FloatingNotifications from "@/components/FloatingNotifications";
 import Image from "next/image";
 import dashboardMainImage from "@/assets/images/dashboard_main.png";
 import cursorYouImage from "@/assets/images/cursor-you.svg";
@@ -37,13 +36,13 @@ export default function Hero() {
     // }, [leftDesignAnimate, leftPointerAnimate, rightDesignAnimate, rightPointerAnimate, leftDesignScope, leftPointerScope, rightDesignScope, rightPointerScope]);
 
     return (
-    <section className="py-24 overflow-x-clip" style={{
-        cursor: `url(${cursorYouImage.src}), auto`,
-    }}>
-        <div className="container relative">
-            <FloatingNotifications className="fixed right-3 top-3 z-[90] w-[min(92vw,360px)] sm:right-5 sm:top-5" />
+        <section className="py-24 overflow-x-clip" style={{
+            cursor: `url(${cursorYouImage.src}), auto`,
+        }}>
+            <div className="container relative">
+                {/* <FloatingNotifications className="fixed right-3 top-3 z-[90] w-[min(92vw,360px)] sm:right-5 sm:top-5" /> */}
 
-            {/* <motion.div ref={leftDesignScope} initial={{ opacity: 0, y: 100, x: -100 }} drag className="absolute -left-40 top-20 hidden lg:block">
+                {/* <motion.div ref={leftDesignScope} initial={{ opacity: 0, y: 100, x: -100 }} drag className="absolute -left-40 top-20 hidden lg:block">
                 <Image src={designExample1Image} alt="Design Example 1" draggable='false' />
             </motion.div>
             <motion.div ref={leftPointerScope} initial={{ opacity: 0, y: 100, x: -200 }} className="absolute left-56 top-96 hidden lg:block">
@@ -57,52 +56,52 @@ export default function Hero() {
                 <Pointer name="Bryan" color="red"/>
             </motion.div> */}
 
-            {/* <div className="flex justify-center">
+                {/* <div className="flex justify-center">
                 <div className="inline-flex py-1 px-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full text-neutral-950 font-semibold">
                     ✨ Trusted by 500+ Prop Traders
                 </div>
             </div> */}
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-medium text-center mt-2">
-                Stop violating Prop Firm<br />Challenge <span className="bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text">Rules</span>
-            </h1>
-            <p className="text-center text-xl text-white/50 mt-8 max-w-2xl mx-auto">
-                Real-time monitoring that alerts you before breaking any prop firm trading rules. Stay compliant, and focus on your strategy.
-            </p>
-            <form 
-                className="flex border border-white/15 rounded-full p-2 mt-8 max-w-lg mx-auto focus-within:border-white/40 focus-within:shadow-lg transition-all duration-300"
-                onSubmit={(e) => {
-                    e.preventDefault();
-                    window.location.href = 'https://prop-trading-assistant.vercel.app/sign-up';
-                }}
-            >
-                <input 
-                    type="text" 
-                    placeholder="Join now =>" 
-                    className="bg-transparent px-4 flex-1 min-w-0 outline-none focus:placeholder-white/70"
-                />
-                <Button type="submit" variant="primary" className="whitespace-nowrap px-4" size="sm">
-                    Sign up
-                </Button>
-            </form>
-            <br/>
-            <br/>
+                <h1 className="text-6xl md:text-7xl lg:text-8xl font-medium text-center mt-2">
+                    Stop violating Prop Firm<br />Challenge <span className="bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text">Rules</span>
+                </h1>
+                <p className="text-center text-xl text-white/50 mt-8 max-w-2xl mx-auto">
+                    Real-time monitoring that alerts you before breaking any prop firm trading rules. Stay compliant, and focus on your strategy.
+                </p>
+                <form
+                    className="flex border border-white/15 rounded-full p-2 mt-8 max-w-lg mx-auto focus-within:border-white/40 focus-within:shadow-lg transition-all duration-300"
+                    onSubmit={(e) => {
+                        e.preventDefault();
+                        window.location.href = 'https://prop-trading-assistant.vercel.app/sign-up';
+                    }}
+                >
+                    <input
+                        type="text"
+                        placeholder="Join now =>"
+                        className="bg-transparent px-4 flex-1 min-w-0 outline-none focus:placeholder-white/70"
+                    />
+                    <Button type="submit" variant="primary" className="whitespace-nowrap px-4" size="sm">
+                        Sign up
+                    </Button>
+                </form>
+                <br />
+                <br />
 
-            {/* Dashboard Image */}
-            <div className="mt-20 flex justify-center">
-                <div 
-                    className="relative p-1 rounded-xl bg-gradient-to-r from-purple-400 to-pink-400 max-w-5xl"
+                {/* Dashboard Image */}
+                <div className="mt-20 flex justify-center">
+                    <div
+                        className="relative p-1 rounded-xl bg-gradient-to-r from-purple-400 to-pink-400 max-w-5xl"
                     // style={{
                     //     boxShadow: '0 0 20px rgba(192, 132, 252, 0.5), 0 0 40px rgba(244, 114, 182, 0.3), 0 0 60px rgba(192, 132, 252, 0.2)'
                     // }}
-                >
-                    <Image 
-                        src={dashboardMainImage} 
-                        alt="Dashboard" 
-                        className="rounded-lg shadow-2xl w-full"
-                    />
+                    >
+                        <Image
+                            src={dashboardMainImage}
+                            alt="Dashboard"
+                            className="rounded-lg shadow-2xl w-full"
+                        />
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     );
 }

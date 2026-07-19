@@ -26,7 +26,7 @@ export default function Integrations() {
                     <div>
                         <Tag>Integrations</Tag>
                         <h2 className="text-6xl font-medium mt-6">
-                            Works with <span className="text-lime-400">all major</span> platforms
+                            Works with <span className="text-pink-400">all major</span> platforms
                         </h2>
                         <p className="text-white/50 mt-4 text-lg">
                             Seamlessly integrates with MetaTrader, cTrader, and all major prop firm platforms to monitor your trading in real-time.

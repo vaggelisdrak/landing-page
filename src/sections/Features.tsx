@@ -36,7 +36,6 @@ const features = [
 import Tag from "@/components/Tag";
 import StockChart from "@/components/StockChart";
 import SearchRules from "@/components/SearchRules";
-import FloatingNotifications from "@/components/FloatingNotifications";
 
 export default function Features() {
     return (
@@ -47,13 +46,13 @@ export default function Features() {
                         <Tag>Features</Tag>
                     </div>
                     <h2 className="text-6xl font-medium mt-6">
-                        Where <span className="text-lime-400">safety</span> meets trading
+                        Where <span className="text-pink-400">safety</span> meets trading
                     </h2>
                     <p className="text-white/50 mt-4 text-lg max-w-2xl mx-auto">
                         Everything you need to pass your prop firm challenge with confidence
                     </p>
                 </div>
-                
+
                 {/* Bento Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 max-w-7xl mx-auto">
                     {features.map((feature, index) => (
@@ -67,44 +66,42 @@ export default function Features() {
                                 transition-all duration-300 
                                 hover:-translate-y-1
                                 cursor-pointer group
-                                ${feature.size === 'large' 
-                                    ? 'md:col-span-2 lg:col-span-2 lg:row-span-2' 
-                                    : feature.size === 'medium' 
-                                    ? 'md:col-span-1 lg:col-span-2' 
-                                    : 'md:col-span-1 lg:col-span-1 lg:row-span-2'
+                                ${feature.size === 'large'
+                                    ? 'md:col-span-2 lg:col-span-2 lg:row-span-2'
+                                    : feature.size === 'medium'
+                                        ? 'md:col-span-1 lg:col-span-2'
+                                        : 'md:col-span-1 lg:col-span-1 lg:row-span-2'
                                 }
                             `}
                         >
                             <div className="h-full flex flex-col justify-between">
                                 <div>
                                     <div className="flex items-center gap-3 mb-3">
-                                        <div className="w-9 h-9 bg-lime-400 rounded-lg flex items-center justify-center transition-transform duration-300 flex-shrink-0">
+                                        <div className="w-9 h-9 bg-pink-400 rounded-lg flex items-center justify-center transition-transform duration-300 flex-shrink-0">
                                             <div className="w-6 h-6 bg-neutral-950 rounded flex-shrink-0"></div>
                                         </div>
-                                        <h3 className={`font-semibold text-white group-hover:text-lime-400 transition-colors duration-300 ${
-                                            feature.size === 'large' ? 'text-2xl lg:text-3xl' : 'text-xl lg:text-2xl'
-                                        }`}>
+                                        <h3 className={`font-semibold text-white group-hover:text-pink-400 transition-colors duration-300 ${feature.size === 'large' ? 'text-2xl lg:text-3xl' : 'text-xl lg:text-2xl'
+                                            }`}>
                                             {feature.title}
                                         </h3>
                                     </div>
-                                    <p className={`text-white/70 group-hover:text-white/90 transition-colors duration-300 ${
-                                        feature.size === 'large' ? 'text-lg' : 'text-base'
-                                    }`}>
+                                    <p className={`text-white/70 group-hover:text-white/90 transition-colors duration-300 ${feature.size === 'large' ? 'text-lg' : 'text-base'
+                                        }`}>
                                         {feature.description}
                                     </p>
                                 </div>
-                                
+
                                 {feature.size === 'large' && (
                                     <div className="mt-6 relative">
-                                        <div className="w-full h-32 bg-transparent rounded-lg border border-lime-400/30 relative overflow-hidden">
+                                        <div className="w-full h-32 bg-transparent rounded-lg border border-pink-400/30 relative overflow-hidden">
                                             {/* Daily Loss Tracking Animation */}
                                             {feature.title === "Daily Loss Tracking" && (
                                                 <>
                                                     {/* Floating notifications */}
-                                                    <FloatingNotifications />
+                                                    {/* <FloatingNotifications /> */}
                                                 </>
                                             )}
-                                            
+
                                             {/* Time-Based Rules Animation */}
                                             {feature.title === "Time-Based Rules" && (
                                                 <StockChart />
@@ -112,7 +109,7 @@ export default function Features() {
                                         </div>
                                     </div>
                                 )}
-                                
+
                                 {/* Real-Time Alerts Animation for small grids */}
                                 {feature.title === "Real-Time Alerts" && (
                                     <SearchRules />

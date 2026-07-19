@@ -17,7 +17,7 @@ export default function CardSwapSection() {
                         <Tag>Features</Tag>
                     </div>
                     <h2 className="text-6xl font-medium mt-6">
-                        How <span className="text-lime-400">TradeSentry</span> works
+                        How <span className="text-pink-400">TradeSentry</span> works
                     </h2>
                     <p className="text-white/50 mt-4 text-lg max-w-2xl mx-auto">
                         Real-time visual feedback that keeps you safe while you trade
@@ -33,7 +33,7 @@ export default function CardSwapSection() {
                         </p>
                         <ul className="space-y-4 md:mr-10 pr-10">
                             <li className="flex items-start gap-3">
-                                <div className="w-9 h-9 bg-lime-400 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <div className="w-9 h-9 bg-pink-400 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                                     <span className="text-neutral-950 font-bold text-xl">1</span>
                                 </div>
                                 <div>
@@ -42,7 +42,7 @@ export default function CardSwapSection() {
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
-                                <div className="w-9 h-9 bg-lime-400 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <div className="w-9 h-9 bg-pink-400 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                                     <span className="text-neutral-950 font-bold text-xl">2</span>
                                 </div>
                                 <div>
@@ -51,7 +51,7 @@ export default function CardSwapSection() {
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
-                                <div className="w-9 h-9 bg-lime-400 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <div className="w-9 h-9 bg-pink-400 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                                     <span className="text-neutral-950 font-bold text-xl">3</span>
                                 </div>
                                 <div>
@@ -60,7 +60,7 @@ export default function CardSwapSection() {
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
-                                <div className="w-9 h-9 bg-lime-400 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <div className="w-9 h-9 bg-pink-400 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                                     <span className="text-neutral-950 font-bold text-xl">4</span>
                                 </div>
                                 <div>
