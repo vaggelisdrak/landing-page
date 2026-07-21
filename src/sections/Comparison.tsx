@@ -5,16 +5,17 @@ import Tag from '@/components/Tag';
 export default function Comparison() {
     const competitorPoints = [
         "Lose Funded/Evaluation Accounts: Accidental rule violations lead to account breaches.",
-        "Impulsive Entries: You trade on feelings, skipping crucial confirmations.",
-        "Emotional Blindness: You unknowingly repeat costly psychological mistakes.",
-        "Manual Tracking: You waste time on messy spreadsheets and guesswork."
+        "Impulsive Entries: You trade on feelings, skipping crucial confirmations and ignoring your personal trading rules.",
+        "Emotional Blindness: You unknowingly repeat the same costly psychological mistakes.",
+        "Manual Tracking: You waste time on messy spreadsheets and guesswork having no idea what you are doing wrong."
+
     ];
 
     const ourPoints = [
-        "Protect Funded/Evaluation Accounts: Get alerts before breaking Prop Firm rules.",
-        "Disciplined Execution: Mandatory checklists are forced before every trade.",
-        "AI Analysis: AI instantly spots emotional bias in your history.",
-        "Automated Insights: View progress with \"Spotify-wrapped\" weekly reports."
+        "Protect Funded/Evaluation Accounts: Get real-time alerts before breaking any Prop Firm rules.",
+        "Disciplined Execution: Add your own rules or use the preset ones and get alerted if you break them.",
+        "AI Analysis: AI assistant helps you understand your behavior and improve your trading.",
+        "Automated Insights: View progress for each account and detailed analytics for all of them."
     ];
 
     return (
@@ -48,13 +49,13 @@ export default function Comparison() {
                                         return (
                                             <li key={index} className="flex items-start gap-3">
                                                 <X className="w-5 h-5 text-pink-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                                            <span className="text-white text-base md:text-lg">
-                                                <span className="font-bold">{key}:</span>{description}
-                                            </span>
-                                        </li>
-                                    );
-                                })}
-                            </ul>
+                                                <span className="text-white text-base md:text-lg">
+                                                    <span className="font-bold">{key}:</span>{description}
+                                                </span>
+                                            </li>
+                                        );
+                                    })}
+                                </ul>
                             </div>
                         </div>
 

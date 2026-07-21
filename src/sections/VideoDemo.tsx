@@ -37,12 +37,15 @@ export default function VideoDemo() {
 
     return (
         <section ref={sectionRef} className="py-24 mt-12">
-            <br/>
+            <br />
             <div className="container">
                 <div className="text-center mb-16">
                     <div className="flex justify-center">
                         <Tag>Demo (20s)</Tag>
                     </div>
+                    <p className="text-white/60 mt-4 text-base md:text-lg max-w-xl mx-auto font-normal">
+                        No holy grail algos, no fake promises — just real-time protection so you lose less
+                    </p>
                 </div>
                 <div className="max-w-6xl mx-auto">
                     <div className="p-1 bg-gradient-to-r from-purple-400 to-pink-400 rounded-2xl shadow-[0_10px_30px_rgba(236,72,153,0.2)]">
