@@ -41,7 +41,7 @@ export const metadata: Metadata = {
         address: false,
         telephone: false,
     },
-    metadataBase: new URL("https://prop-trading-assistant.vercel.app"),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://mytradesentry.com"),
     alternates: {
         canonical: "/",
     },
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Prop Trading Assistant | Pass Your Prop Firm Challenge with Confidence",
         description: "Monitor your prop firm challenge in real-time. Get instant alerts before violating rules. Track daily loss, max drawdown, and trading time restrictions.",
-        url: "https://prop-trading-assistant.vercel.app",
+        url: "https://mytradesentry.com",
         siteName: "Prop Trading Assistant",
         locale: "en_US",
         type: "website",
@@ -102,7 +102,7 @@ export default function RootLayout({
         name: 'Prop Trading Assistant',
         applicationCategory: 'FinanceApplication',
         operatingSystem: 'Web Browser',
-        url: 'https://prop-trading-assistant.vercel.app',
+        url: 'https://mytradesentry.com',
         offers: {
             '@type': 'Offer',
             price: '0',
@@ -125,7 +125,7 @@ export default function RootLayout({
             'Maximum drawdown protection',
             'Trading days counter'
         ],
-        screenshot: 'https://prop-trading-assistant.vercel.app/og-image.png',
+        screenshot: 'https://mytradesentry.com/og-image.png',
     };
 
     return (
