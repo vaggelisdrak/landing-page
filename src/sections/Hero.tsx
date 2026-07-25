@@ -71,7 +71,7 @@ export default function Hero() {
                     className="flex border border-white/15 rounded-full p-2 mt-8 max-w-lg mx-auto focus-within:border-white/40 focus-within:shadow-lg transition-all duration-300"
                     onSubmit={(e) => {
                         e.preventDefault();
-                        window.location.href = 'https://prop-trading-assistant.vercel.app/sign-up';
+                        window.location.href = 'https://app.mytradesentry.com/sign-up';
                     }}
                 >
                     <input

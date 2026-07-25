@@ -76,10 +76,10 @@ function extendMaterial<T extends THREE.Material = THREE.Material>(
 
 const CanvasWrapper: FC<{ children: ReactNode; transparent?: boolean }> = ({ children, transparent }) => (
   <Canvas 
-    dpr={[1, 2]} 
+    dpr={[1, 1.5]} 
     frameloop="always" 
     className="w-full h-full relative"
-    gl={{ alpha: transparent }}
+    gl={{ alpha: transparent, powerPreference: "high-performance", antialias: false }}
   >
     {children}
   </Canvas>

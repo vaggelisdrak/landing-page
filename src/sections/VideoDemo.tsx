@@ -51,6 +51,7 @@ export default function VideoDemo() {
                     <div className="p-1 bg-gradient-to-r from-purple-400 to-pink-400 rounded-2xl shadow-[0_10px_30px_rgba(236,72,153,0.2)]">
                         <iframe
                             ref={iframeRef}
+                            loading="lazy"
                             src="https://player.mux.com/btSpmWLcdQEWzVUinFxBoHl01JsrPV02cmmM21o2HBuIU?autoplay=1&muted=1"
                             style={{ width: '100%', border: 'none', aspectRatio: '238/135', borderRadius: '1rem' }}
                             allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
