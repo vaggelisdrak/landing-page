@@ -30,7 +30,7 @@ export default function Icon() {
                         color: '#0a0a0a',
                     }}
                 >
-                    P
+                    T
                 </div>
             </div>
         ),

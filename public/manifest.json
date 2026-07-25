@@ -1,7 +1,7 @@
 {
-  "name": "Prop Trading Assistant",
-  "short_name": "PropTrading",
-  "description": "Real-time compliance monitoring for prop traders. Pass your prop firm challenge with confidence.",
+  "name": "TradeSentry",
+  "short_name": "TradeSentry",
+  "description": "Real-time compliance monitoring for prop firm traders. Never blow an account again.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
