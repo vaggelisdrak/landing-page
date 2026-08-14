@@ -2,7 +2,7 @@
 
 import Button from "@/components/Button";
 import Image from "next/image";
-import dashboardMainImage from "@/assets/images/dashboard_main.png";
+import dashboardMainImage from "@/assets/images/carousel-analytics-account.png";
 import cursorYouImage from "@/assets/images/cursor-you.svg";
 
 export default function Hero() {
