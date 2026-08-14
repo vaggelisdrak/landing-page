@@ -7,7 +7,8 @@ export default function Comparison() {
         "Lose Funded/Evaluation Accounts: Accidental rule violations lead to account breaches.",
         "Impulsive Entries: You trade on feelings, skipping crucial confirmations and ignoring your personal trading rules.",
         "Emotional Blindness: You unknowingly repeat the same costly psychological mistakes.",
-        "Manual Tracking: You waste time on messy spreadsheets and guesswork having no idea what you are doing wrong."
+        "Manual Tracking: You waste time on messy spreadsheets and guesswork having no idea what you are doing wrong.",
+        "Finances nightmare: You have no idea how much you're spending on challenges and how much you actually earn from payouts."
 
     ];
 
@@ -15,7 +16,8 @@ export default function Comparison() {
         "Protect Funded/Evaluation Accounts: Get real-time alerts before breaking any Prop Firm rules.",
         "Disciplined Execution: Add your own rules or use the preset ones and get alerted if you break them.",
         "AI Analysis: AI assistant helps you understand your behavior and improve your trading.",
-        "Automated Insights: View progress for each account and detailed analytics for all of them."
+        "Automated Insights: View progress for each account and detailed analytics for all of them.",
+        "Financial Overview: Finally know exactly how much you spend and earn, for all your accounts."
     ];
 
     return (
