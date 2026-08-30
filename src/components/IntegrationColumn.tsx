@@ -1,7 +1,9 @@
 'use client';
 
-import { type IntegrationsType } from "@/sections/Integrations";
-import Image from "next/image";
+// import { type IntegrationsType } from "@/sections/Integrations";
+// IntegrationsType is defined locally below since the export in Integrations.tsx is commented out
+import Image, { type StaticImageData } from "next/image";
+type IntegrationsType = { name: string; icon: StaticImageData; description: string }[];
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
 import { Fragment } from "react";
