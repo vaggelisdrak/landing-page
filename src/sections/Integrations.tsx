@@ -83,7 +83,7 @@ function FtmoCard({
                     <div
                         className="relative rounded-3xl p-6 overflow-hidden border border-white/10"
                         style={{
-                            background: "linear-gradient(145deg, rgba(25,25,38,0.97) 0%, rgba(12,12,20,0.99) 100%)",
+                            background: "rgb(23,23,23)",
                             boxShadow: "0 25px 60px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.04) inset",
                         }}
                     >

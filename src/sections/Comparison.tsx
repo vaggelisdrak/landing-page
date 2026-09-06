@@ -74,9 +74,9 @@ export default function Comparison() {
                     <div className="grid md:grid-cols-2 gap-8 mt-16 max-w-5xl mx-auto">
                         {/* Competitor Card */}
                         <div className="rounded-3xl p-0.5 bg-gradient-to-r from-purple-400 to-pink-400">
-                            <div className="rounded-3xl p-8 md:p-12 bg-neutral-950 h-full">
+                            <div className="rounded-3xl p-8 md:p-12 bg-neutral-900 h-full">
                                 <h3 className="text-2xl md:text-3xl font-bold mb-8">
-                                    <span className="bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text">Without the app</span>
+                                    <span className="bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text">Without the app...</span>
                                 </h3>
                                 <ul className="space-y-4">
                                     {competitorPoints.map((point, index) => {
@@ -96,9 +96,9 @@ export default function Comparison() {
                         </div>
 
                         {/* Our Product Card */}
-                        <div className="rounded-3xl p-8 md:p-12 relative border border-pink-400 bg-neutral-950">
+                        <div className="rounded-3xl p-8 md:p-12 relative border border-pink-400 bg-neutral-900">
                             <h3 className="text-2xl md:text-3xl font-bold text-pink-400 mb-8">
-                                With the app
+                                With the app...
                             </h3>
                             <ul className="space-y-4">
                                 {ourPoints.map((point, index) => {
