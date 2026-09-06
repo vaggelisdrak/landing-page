@@ -41,7 +41,7 @@ export default function VideoDemo() {
             <div className="container">
                 <div className="text-center mb-16">
                     <div className="flex justify-center">
-                        <Tag>Demo (20s)</Tag>
+                        <Tag>Demo</Tag>
                     </div>
                     <p className="text-white/60 mt-4 text-base md:text-lg max-w-xl mx-auto font-normal">
                         No holy grail algos, no fake promises — just real-time protection so you lose less
@@ -52,7 +52,7 @@ export default function VideoDemo() {
                         <iframe
                             ref={iframeRef}
                             loading="lazy"
-                            src="https://player.mux.com/btSpmWLcdQEWzVUinFxBoHl01JsrPV02cmmM21o2HBuIU?autoplay=1&muted=1"
+                            src="https://player.mux.com/00XHIbWzyPOgljgaNSdsyLkQUtis6lCQ3QruAMgI4deY?autoplay=1&muted=1"
                             style={{ width: '100%', border: 'none', aspectRatio: '238/135', borderRadius: '1rem' }}
                             allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
                             allowFullScreen

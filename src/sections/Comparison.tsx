@@ -76,7 +76,7 @@ export default function Comparison() {
                         <div className="rounded-3xl p-0.5 bg-gradient-to-r from-purple-400 to-pink-400">
                             <div className="rounded-3xl p-8 md:p-12 bg-neutral-950 h-full">
                                 <h3 className="text-2xl md:text-3xl font-bold mb-8">
-                                    <span className="bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text">Without the app</span> 😔
+                                    <span className="bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text">Without the app</span>
                                 </h3>
                                 <ul className="space-y-4">
                                     {competitorPoints.map((point, index) => {
@@ -98,7 +98,7 @@ export default function Comparison() {
                         {/* Our Product Card */}
                         <div className="rounded-3xl p-8 md:p-12 relative border border-pink-400 bg-neutral-950">
                             <h3 className="text-2xl md:text-3xl font-bold text-pink-400 mb-8">
-                                With the app 🤩
+                                With the app
                             </h3>
                             <ul className="space-y-4">
                                 {ourPoints.map((point, index) => {
@@ -139,9 +139,8 @@ export default function Comparison() {
                     onClick={() => setSelectedImage(null)}
                 >
                     <div
-                        className={`relative w-full bg-neutral-900 border border-pink-400/40 rounded-2xl p-3 sm:p-5 shadow-2xl shadow-pink-500/15 max-h-[96vh] flex flex-col ${
-                            selectedImage.isWide ? 'max-w-7xl' : 'max-w-6xl'
-                        }`}
+                        className={`relative w-full bg-neutral-900 border border-pink-400/40 rounded-2xl p-3 sm:p-5 shadow-2xl shadow-pink-500/15 max-h-[96vh] flex flex-col ${selectedImage.isWide ? 'max-w-7xl' : 'max-w-6xl'
+                            }`}
                         onClick={(e) => e.stopPropagation()}
                     >
                         <div className="flex items-center justify-between pb-3 border-b border-white/10 mb-3">
@@ -162,14 +161,13 @@ export default function Comparison() {
                                 <X className="w-6 h-6" />
                             </button>
                         </div>
-                        <div className={`relative rounded-xl bg-neutral-950 flex-1 max-h-[85vh] p-2 ${
-                            selectedImage.isWide ? 'overflow-auto' : 'overflow-hidden flex justify-center items-center'
-                        }`}>
+                        <div className={`relative rounded-xl bg-neutral-950 flex-1 max-h-[85vh] p-2 ${selectedImage.isWide ? 'overflow-auto' : 'overflow-hidden flex justify-center items-center'
+                            }`}>
                             <Image
                                 src={selectedImage.image}
                                 alt={selectedImage.title}
-                                className={selectedImage.isWide 
-                                    ? "min-w-[900px] md:min-w-[1150px] w-full h-auto max-w-none rounded-lg" 
+                                className={selectedImage.isWide
+                                    ? "min-w-[900px] md:min-w-[1150px] w-full h-auto max-w-none rounded-lg"
                                     : "w-full h-auto max-h-[85vh] object-contain rounded-lg"
                                 }
                                 priority
